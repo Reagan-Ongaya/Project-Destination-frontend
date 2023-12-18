@@ -8,7 +8,7 @@ export const Navbar= () => {
         <Flex justify={'space-between'} h={16}>
             <HStack spacing={5}>
             <RepeatClockIcon  w={10} h={10} color={'blueviolet'}/>
-                <HStack spacing={8}>
+                <HStack spacing={8} color={'yellowgreen'}>
                     <Link to={'/'}>Home</Link>
                     <Link to={'/add-destination'}>Add Destination</Link>
                 </HStack>
