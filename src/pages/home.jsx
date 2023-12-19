@@ -30,10 +30,20 @@ const data = [
     {
 		id: 3,
 		name: 'Kenya',
-		image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQht1bYqUYJhbyhuuthYgfXnOuGMp5bK_oMIMPdlDeva0DVwTgRyufYIGJAhkkn0vKFmVU&usqp=CAU',
+		image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaPDhJOawj4aZucFCA7pz5ctvHSFXrabTKkhQcMRev_d0vRCMrhU3bGj68u5vDjh0xKas&usqp=CAU',
 		location: 'Nairobi',
 		price: 25000,
 		start_date: 'Dec 15, 2023',
+		end_date: 'Dec, 31, 2023',
+	},
+
+    {
+		id: 4,
+		name: 'Qatar',
+		image: 'https://secure.s.forbestravelguide.com/img/properties/marsa-malaz-kempinski-the-pearl-doha/marsa-malaz-kempinski-the-pearl-doha-pool-view.jpg',
+		location: 'Doha',
+		price: 50000,
+		start_date: 'Dec 14, 2023',
 		end_date: 'Dec, 31, 2023',
 	},
 
@@ -60,13 +70,17 @@ export const Home = () => {
 
 	return (
 		<Flex direction="column" p={4} gap={4}>
+
 			<Input
+			    justifyContent={'center'}
 				placeholder="Search"
 				value={searchTerm}
 				onChange={(e) => setSearchTerm(e.target.value)}
                 borderRadius={25}
                 color={'white'}
+                
 			/>
+            
 
 			{/* Display destinations */}
 			{searchedDestinations.length > 0 ? (
@@ -76,7 +90,7 @@ export const Home = () => {
 					))}
 				</SimpleGrid>
 			) : (
-				<Center>
+				<Center >
 					<Heading size={'2xl'} fontFamily={'cursive'}>No Destination</Heading>
 				</Center>
 			)}

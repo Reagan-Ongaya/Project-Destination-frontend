@@ -29,7 +29,7 @@ export const DestinationCard = ({
 				eventName={name}
 			/>
 
-			<Box w={'full'} rounded={'md'} bg={'white'} p={5} borderRadius={30} bgColor={'blue'} >
+			<Box w={'full'} rounded={'md'} bg={'white'} p={5} borderRadius={30} bgColor={'lightblue'} >
 				<Box h={'200px'} mb={6} position={'relative'} borderRadius={25} >
 					<img src={image} alt=""/>
 				</Box>
