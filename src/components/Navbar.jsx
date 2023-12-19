@@ -11,6 +11,7 @@ export const Navbar= () => {
                 <HStack spacing={8} color={'yellowgreen'}>
                     <Link to={'/'}>Home</Link>
                     <Link to={'/add-destination'}>Add Destination</Link>
+                    <Link to={'/About'}>About</Link>
                 </HStack>
             </HStack>
 
