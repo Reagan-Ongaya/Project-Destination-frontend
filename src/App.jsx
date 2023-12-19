@@ -13,7 +13,7 @@ function App() {
       {/* Navbar */}
       <Navbar />
         
-      <Box bg={'blueviolet'} h={'600'}>
+      <Box bg={'black'} h={'fit-content'}>
         <Routes>
           <Route path='/' element={<Home />}></Route>
 
