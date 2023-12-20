@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Box, Button, Flex, FormControl, FormLabel, HStack, Heading, Input, Stack } from "@chakra-ui/react";
 
+import {CalendarIcon, EmailIcon, SettingsIcon, LinkIcon, BellIcon} from "@chakra-ui/icons"
 import { BASE_URL } from '../utilities';
 
 export const AddDestination = () => {
@@ -56,13 +57,13 @@ export const AddDestination = () => {
     }
 
     return (
-       <Flex align={'center'} justify={'center'} backgroundImage={'https://png.pngtree.com/png-clipart/20210516/original/pngtree-blue-gradient-travel-promotion-flat-flooring-banner-template-png-image_6292300.png'}>
+       <Flex align={'center'} justify={'center'}>
             <Stack>
-                <Heading fontSize={'30'} fontFamily={'cursive'}> Add Destination</Heading>
+                <Heading color={'lightblue'} fontSize={'30'} fontFamily={'cursive'}> Add Destination</Heading>
 
                 <Box as='form' 
                     rounded={'lg'} 
-                    bg={'purple'} 
+                    bg={'lightblue'} 
                     p={8} 
                     borderRadius={16}
                     onSubmit={handleFormSubmit}
@@ -145,20 +146,49 @@ export const AddDestination = () => {
                         </FormControl>
                         </HStack>
 
-                        <Stack pt={8} bg={'red'} py={1} borderRadius={10}>
+
+                        <Stack pt={8} py={1} borderRadius={10}>
                             <Button
                                 isLoading={isLoading}
 								loadingText="Booking Destination"
                                 type='submit'
                                 colorScheme='teal'
                                 variant='outline'
+                                bg ={'black'}
                             > 
                             Book now </Button>
                         </Stack>
                         
                     </Stack>
                  </Box>
+                 <Box>
+                <HStack color={'GrayText'}>
+                    <Heading padding={9}>
+                         <EmailIcon />  
+                   </Heading>
+                         
+                   <Heading padding={9}>
+                         <CalendarIcon />
+                   </Heading>
+
+                   <Heading padding={9}>
+                         <SettingsIcon />
+                   </Heading>
+
+                   <Heading padding={9}>
+                         <LinkIcon />
+                   </Heading>
+
+                   <Heading padding={9}>
+                         <BellIcon />
+                   </Heading>
+
+                   
+                </HStack>
+                
+                 </Box>
             </Stack>
+
         </Flex>
     )
 };

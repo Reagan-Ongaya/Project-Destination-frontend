@@ -69,7 +69,7 @@ export const BookingForm = ({ isOpen, onClose, destinationId, destinationName })
 	};
 
 	return (
-		<Modal isOpen={isOpen} onClose={onClose} borderRadius={25} colorScheme='blueviolet' >
+		<Modal isOpen={isOpen} onClose={onClose}color={'blueviolet'} >
 			<ModalOverlay />
 			<ModalContent as={'form'} onSubmit={handleForm}>
 				<ModalHeader>Book for {destinationName}</ModalHeader>
@@ -83,6 +83,7 @@ export const BookingForm = ({ isOpen, onClose, destinationId, destinationName })
 								required
 								value={formData['name']}
 								onChange={handleChange}
+								borderRadius={30}
 							/>
 						</FormControl>
 
@@ -93,6 +94,7 @@ export const BookingForm = ({ isOpen, onClose, destinationId, destinationName })
 								required
 								value={formData['phone']}
 								onChange={handleChange}
+								borderRadius={30}
 							/>
 						</FormControl>
 					</Stack>

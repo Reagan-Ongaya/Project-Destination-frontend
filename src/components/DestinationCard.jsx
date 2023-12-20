@@ -45,9 +45,9 @@ export const DestinationCard = ({
 						</Text>
 					</Stack>
 
-					<Button colorScheme="teal" onClick={onOpen}>
+					<Button colorScheme="black" onClick={onOpen}>
 						{' '}
-						Book
+						Book  here
 					</Button>
 				</Stack>
 			</Box>

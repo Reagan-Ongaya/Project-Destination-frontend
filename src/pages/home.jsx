@@ -94,6 +94,7 @@ export const Home = () => {
 					<Heading size={'2xl'} fontFamily={'cursive'}>No Destination</Heading>
 				</Center>
 			)}
+			
 		</Flex>
 	);
 };

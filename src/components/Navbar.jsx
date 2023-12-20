@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Box, Flex, HStack} from "@chakra-ui/react";
-import {RepeatClockIcon,  BellIcon, SunIcon, HamburgerIcon} from "@chakra-ui/icons"
+import {RepeatClockIcon,  AtSignIcon, SunIcon, HamburgerIcon} from "@chakra-ui/icons"
 import { color } from "framer-motion";
 
 export const Navbar= () => {
@@ -9,7 +9,7 @@ export const Navbar= () => {
         <Flex justify={'space-between'} h={16}>
             <HStack spacing={5}> 
             <RepeatClockIcon  w={10} h={10} color={'black'} spacing={8} /> 
-                <HStack spacing={6} color={'blue'} fontSize={18} fontFamily={'cursive'} >
+                <HStack spacing={6}  fontSize={20} fontFamily={'monospace'} >
                     <Link to={'/'} bg={'blue'} >Home</Link>
                     <Link to={'/add-destination'}>Add Destination</Link>
                     <Link to={'/About'}>About</Link>
@@ -19,7 +19,7 @@ export const Navbar= () => {
             
             <HStack spacing={8}>
             <Flex py={3} px={2} color={"black"}>
-            <BellIcon  w={8} h={8}/>
+            <AtSignIcon  w={8} h={8}/>
             </Flex>
             <Flex py={3} color={"black"}>
             <SunIcon  w={8} h={8}/>

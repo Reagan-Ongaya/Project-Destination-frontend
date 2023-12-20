@@ -6,6 +6,7 @@ import { Home } from './pages/home';
 import { AddDestination } from './pages/AddDestination';
 
 
+
 function App() {
   return (
     <main>
